@@ -1,0 +1,140 @@
+
+/* Estilização geral */
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Nata Sans', sans-serif;
+    color: rgb(0, 0, 0);  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+    min-height: 100vh;
+}
+
+/* Estilização do body */
+.bodycontainer {
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4); 
+    padding: 3% 5%;
+    background-color: rgba(0, 0, 0, 0.055);
+    height: auto;
+}
+
+/* Estilização geral dos inputs e dos botões de filtro */
+.input,
+.filterbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    max-width: 1000px;   
+    width: 100%;      
+    margin: 0 auto;      
+    flex-wrap: wrap;     
+}
+
+input,
+.filterbuttons button {
+    flex: 1;             
+    min-width: 120px;   
+}
+
+/* Estilização específica dos inputs */
+input {
+    padding: 0 10px;
+    height: 35px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.466);
+    outline: none;
+    border: 1px solid rgba(73, 73, 73, 0.37);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+}
+
+input:focus {
+    background-color:  rgba(255, 255, 255, 0.938);
+    color: rgb(0, 0, 0);
+    padding: 0 10px;
+}
+
+/* Estilização específica dos botões de filtro */
+.filterbuttons button {
+    background-color: rgb(3, 22, 107);
+    box-shadow: 1px 1px 5px rgba(65, 64, 66, 0.4);
+    border: none;
+    padding: 1% 1.5%;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 35px;
+    color: white;
+}
+
+.filterbuttons button:active {
+    background-color: rgb(10, 41, 179);
+}
+
+/* Estilização botão de Limpar*/
+.buttonLimpar{
+    display: flex;
+    margin-top: 2%;
+}
+
+.buttonLimpar button{
+    width: 220px;
+    height: 35px;
+    background-color: rgb(10, 53, 172);
+    box-shadow: 1px 1px 5px rgba(50, 11, 94, 0.4);
+    border: none;
+    padding: 0 1.5%;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.buttonLimpar button:active {
+    background-color: rgb(2, 2, 51);
+}
+
+
+/* Estilização da tabela*/
+.table{
+    padding-top: 50px;
+    max-width: 1000px;   /* tamanho máximo */
+    width: 100%;   
+}
+
+.table tr th{
+    padding: 10px 15px;
+    color: white;
+    font-weight: 400;
+    background: rgb(10, 53, 172);
+}
+
+.table tbody{
+    background-color:rgb(255, 255, 255) ;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+
+/* Estilização do footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(3, 22, 107);
+    padding: 10px 0;
+    margin-top: auto; /* gruda no final */
+    width: 100%;
+}
+
+ footer h1{
+    color: white;
+    font-size: larger;
+    font-weight: 300;
+    
+}

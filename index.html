@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <title>Banco de Dados</title>
+</head>
+<body>
+
+       <!-- Código HTML para o corpo da página -->
+        <div class="bodycontainer">
+            <!-- input para o usuário inserir os filtros -->
+            <div class="input">
+                <input type="text" id="filtro-nome" placeholder="filtrar por nome">
+                <input type="number" id="filtro-media" placeholder="Média mínima">
+                <input type="number" id="filtro-faltas" placeholder="Máximo de faltas">
+            </div>
+            <!-- buttons para o evento de filtragem -->
+            <div class="filterbuttons">
+                <button id="mostrar-aprovados">Mostrar aprovados</button>
+                <button id="mostrar-reprovados-por-nota">Mostrar reprovados por nota</button>
+                <button id="mostrar-reprovados-por-faltas">Mostrar reprovados por faltas</button>
+                <button id="mostrar-reprovados-por-nota-e-faltas">Reprovados por Nota e Faltas</button>
+
+            </div>
+            
+            <!-- button para Limpar os filtros usados -->
+            <div class="buttonLimpar">
+                <button id="limpar-filtros">Limpar Filtros</button>
+            </div>
+            
+            <!-- Div para estilização da table -->
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <!-- Cabeçalho para a table -->
+                            <th>Id</th>
+                            <th>Primeiro Nome</th>
+                            <th>Último Nome</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                            <th>Nota 3</th>
+                            <th>Nota 4</th>
+                            <th>Faltas</th>
+                            <th>Média</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <!-- Corpo da table -->
+                    <tbody id="tabela-alunos"> </tbody>
+            </table>
+            </div>
+            
+        </div>
+    <footer>
+        <h1> Solução feita por Giulia dos Santos Cardoso</h1>
+     </footer>
+    <script src="src/javaScript/app.js"></script>
+</body>
+</html>
